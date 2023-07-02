@@ -27,11 +27,15 @@ public class MenuOperaciones {
           JOptionPane.showMessageDialog(null, "Convertir divisas seleccionado");
           MenuConversorDivisas.init();
         }
-        case "Convertir temperatura" -> JOptionPane.showMessageDialog(null, "Convertir temperatura seleccionado");
+        case "Convertir temperatura" -> {
+          JOptionPane.showMessageDialog(null, "Convertir temperatura seleccionado");
+          MenuConversionTemperatura.init();
+        }
       }
     } catch (NullPointerException e) {
 //    En caso que el usuario no escoja ninguna opcion
       JOptionPane.showMessageDialog(null, "Gracias por usar el programa");
+
     }
 
   }
