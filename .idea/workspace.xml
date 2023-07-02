@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="724563e8-fb14-4443-b802-ea920870ab8c" name="Changes" comment="Creacion Cuadro de dialogo - Entrada de Usuario y Menu Divisas">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/conversor/divisa/Divisas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/conversor/divisa/MenuDivisas.java" afterDir="false" />
+    <list default="true" id="724563e8-fb14-4443-b802-ea920870ab8c" name="Changes" comment="Creacion cuadros de dialogo - Entrada de Usuario y Menu Divisas">
       <change afterPath="$PROJECT_DIR$/src/com/conversor/divisa/OperacionCambio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/vistas/ContinuarEjecucion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/vistas/EntradaValorUsuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/vistas/MenuConversorDivisas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenge_ONE_Conversor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/challenge_ONE_Conversor.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/conversor/divisa/MenuDivisas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/conversor/divisa/MenuDivisas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/vistas/ContinuarEjecucion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vistas/ContinuarEjecucion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/vistas/EntradaValorUsuario.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/vistas/MenuOperaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vistas/MenuOperaciones.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +30,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2RyphMR1VdhlsF0Hz85M6ojZJDh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -42,6 +45,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -86,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688235397338</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Creacion cuadros de dialogo - Entrada de Usuario y Menu Divisas">
+      <option name="closed" value="true" />
+      <created>1688245810395</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688245810395</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,7 +145,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creacion Cuadro de dialogo - Menu Principal" />
     <MESSAGE value="Creacion Cuadro de dialogo - Entrada de Usuario y Menu Divisas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creacion Cuadro de dialogo - Entrada de Usuario y Menu Divisas" />
+    <MESSAGE value="Creacion cuadros de dialogo - Entrada de Usuario y Menu Divisas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creacion cuadros de dialogo - Entrada de Usuario y Menu Divisas" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

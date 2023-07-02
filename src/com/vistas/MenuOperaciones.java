@@ -1,7 +1,5 @@
 package com.vistas;
 
-import com.conversor.divisa.MenuDivisas;
-
 import javax.swing.*;
 
 public class MenuOperaciones {
@@ -23,16 +21,15 @@ public class MenuOperaciones {
             options[0]
     );
 //  Manejar la opcion escogida por el usuario
-    if (operacionARealizar != null) {
+    try {
       switch (operacionARealizar) {
         case "Convertir divisa" -> {
           JOptionPane.showMessageDialog(null, "Convertir divisas seleccionado");
-          MenuDivisas.init();
-          ContinuarEjecucion.init();
+          MenuConversorDivisas.init();
         }
         case "Convertir temperatura" -> JOptionPane.showMessageDialog(null, "Convertir temperatura seleccionado");
       }
-    } else {
+    } catch (NullPointerException e) {
 //    En caso que el usuario no escoja ninguna opcion
       JOptionPane.showMessageDialog(null, "Gracias por usar el programa");
     }

@@ -1,12 +1,10 @@
 package com.conversor.divisa;
 
-import com.vistas.EntradaValorUsuario;
-
 import javax.swing.*;
 
 public class MenuDivisas {
-  public static void init() {
-//  Array con lista de divisas disponibles para realizar operaciones
+  public static void init(double valorIngresado) {
+//  Definicion de divisas disponibles para realizar operaciones
     String[] divisas = {
             "Pesos Colombiano a Dolares",
             "Pesos Colombiano a Yenes",
@@ -19,34 +17,34 @@ public class MenuDivisas {
             "Euros a Pesos Colombianos",
             "Wones Coreanos a Pesos Colombianos"
     };
-//  Captura de valor ingresado por el usuario para realizar la operacion de cambio
-    EntradaValorUsuario valorIngresado = new EntradaValorUsuario();
-    double valorDivisa = valorIngresado.init();
-//  Cuadro de dialogo adicional cuando el usuario ingresa un valor de 0 o negativo
-    if (valorDivisa < 0.0) {
-      JOptionPane.showMessageDialog(null, "No puedes transformar valores negativos");
-      valorIngresado.init();
-
-    } else if (valorDivisa == 0.0) {
-      JOptionPane.showMessageDialog(null, "No puedes transformar el valor de 0");
-      valorIngresado.init();
-    } else {
 //    Captura de opcion de divisas seleccionadas para realizar operacion
-      String divisasSeleccionadas = (String) JOptionPane.showInputDialog(
-              null,
-              "Selecciona las divisas con las que deseas operar",
-              "Menu Divisas",
-              JOptionPane.PLAIN_MESSAGE,
-              null,
-              divisas,
-              divisas[0]
-      );
-
-      try {
-//        TODO: switch para transformar cada divisa
-      } catch (NullPointerException e) {
-        JOptionPane.showInternalMessageDialog(null, "Gracias por usar el programa");
+    String divisasSeleccionadas = (String) JOptionPane.showInputDialog(
+            null,
+            "Selecciona las divisas con las que deseas operar",
+            "Menu Divisas",
+            JOptionPane.PLAIN_MESSAGE,
+            null,
+            divisas,
+            divisas[0]
+    );
+    try {
+      switch (divisasSeleccionadas) {
+        case "Pesos Colombiano a Dolares" -> OperacionCambio.pesoADivisa(valorIngresado, "Dolares", Divisas.PESO_DOLAR);
+        case "Pesos Colombiano a Euros" -> OperacionCambio.pesoADivisa(valorIngresado, "Euros", Divisas.PESO_EURO);
+        case "Pesos Colombiano a Libras" -> OperacionCambio.pesoADivisa(valorIngresado, "Libras", Divisas.PESO_LIBRA);
+        case "Pesos Colombiano a Yenes" -> OperacionCambio.pesoADivisa(valorIngresado, "Yenes", Divisas.PESO_YEN);
+        case "Pesos Colombiano a Wones Coreano" ->
+                OperacionCambio.pesoADivisa(valorIngresado, "Wones Coreanos", Divisas.PESO_WON);
+        case "Wones Coreanos a Pesos Colombianos" ->
+                OperacionCambio.divisaAPeso(valorIngresado, "Wones Coreanos", Divisas.PESO_WON);
+        case "Euros a Pesos Colombianos" -> OperacionCambio.divisaAPeso(valorIngresado, "Euros", Divisas.PESO_EURO);
+        case "Libras a Pesos Colombianos" -> OperacionCambio.divisaAPeso(valorIngresado, "Libras", Divisas.PESO_LIBRA);
+        case "Yenes a Pesos Colombianos" -> OperacionCambio.divisaAPeso(valorIngresado, "Yenes", Divisas.PESO_YEN);
+        case "Dolares a Pesos Colombianos" ->
+                OperacionCambio.divisaAPeso(valorIngresado, "Dolares", Divisas.PESO_DOLAR);
       }
+    } catch (NullPointerException e) {
+      JOptionPane.showMessageDialog(null, "Gracias por usar el programa");
     }
   }
 }
